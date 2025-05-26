@@ -1,0 +1,63 @@
+import math
+print("Калькулятор трёх функций")
+while True:
+    vibor=int(input("Хотите что-бы все значения были вместе,а не отдельно?Если да введите 1,нет–2"))
+    if vibor==1:
+        number=int(input("Введите число для вычисления квадрата числа и факториала"))
+        a=math.sqrt(number)
+        b=math.factorial(number)
+        print("Квадрат числа",number,"равно",a)
+        print("Факториал числа",number,"равно",b)
+        ugol=int(input("Введите радиус угла"))
+        radian=math.radians(ugol)
+        vibor0=int(input("Что хотите узнать?Синус(1),косинус(2),тангенс(3) или всё вместе(4)"))
+        if vibor0==1:
+            sinus=math.sin(radian)
+            print(radian)
+        elif vibor0==2:
+            cosinus=math.cos(radian)
+            print(cosinus)
+        elif vibor0==3:
+            tangens=math.tan(radian)
+            print(tangens)
+        elif vibor0==4:
+            sinus1=math.sin(radian)
+            cosinus1=math.cos(radian)
+            tangens1=math.tan(radian)
+            print(sinus1)
+            print(cosinus1)
+            print(tangens1)
+        else:
+            print("Введите 1,2,3 или 4")
+            continue
+    elif vibor==2:
+       number1=int(input("Введите число для вычисления квадрата числа и факториала"))
+       ugol1=int(input("Введите угол в радиусах"))
+       radian1=math.radians(ugol1)
+       vibor2=int(input("Что хотите узнать?"))
+       print("1-Квадрат числа")
+       print("2-Факториал")
+       print("3-Синус")
+       print("4-Косинус")
+       print("5-Тангенс")
+       if vibor2==1:
+           a1=math.sqrt(number1)
+           print(number1)
+       elif vibor2==2:
+           b1=math.factorial(number1)
+           print(b1)
+       elif vibor2==3:
+           sinus2=math.sin(radian1)
+           print(sinus2)
+       elif vibor2==4:
+           cosinus2=math.cos(radian1)
+           print(cosinus2)
+       elif vibor2==5:
+           tangens2=math.tan(radian1)
+           print(tangens2)
+       else:
+           print("Введите 1,2,3,4 или 5")
+           continue
+    else:
+        print("Введите 1 или 2")
+        continue

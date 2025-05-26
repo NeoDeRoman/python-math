@@ -1,0 +1,19 @@
+import math
+print("Калькулятор перевода градусов в радианы и подсчёт синуса,косинуса и тангенса")
+while True:
+    radius=int(input("Введите радиус"))
+    radian=math.radians(radius)
+    print(radian)
+    vibor=int(input("Что хотите первым узнать?Синус(1),косинус(2) или тангенс(3)"))
+    if vibor==1:
+        sinus=math.sin(radian)
+        print(sinus)
+    elif vibor==2:
+        cosinus=math.cos(radian)
+        print(cosinus)
+    elif vibor==3:
+        tangens=math.tan(radian)
+        print(tangens)
+    else:
+        print("Введите 1,2 или 3")
+        continue
